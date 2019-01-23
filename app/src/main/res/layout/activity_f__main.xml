@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+    tools:context=".uploadPic.F_MainActivity"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_main"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/linearLayout"
+    android:orientation="horizontal">
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonChoose"
+        android:text="Choose"
+        android:layout_weight="1"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/editText"
+        android:layout_weight="4"
+        android:hint="Enter name for Image"/>
+
+</LinearLayout>
+
+<ImageView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/imageView"
+    android:layout_below="@+id/linearLayout"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"/>
+
+
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true">
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/buttonUpload"
+        android:text="Upload" android:layout_weight="1"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/textViewShow"
+        android:text="View Uploads"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center" android:padding="10dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>
